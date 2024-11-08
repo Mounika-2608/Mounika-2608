@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Salon Appointment Booking</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h1>Book Your Appointment</h1>
+            <form id="appointment-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="service">Select Service</label>
+                <select id="service" name="service" required>
+                    <option value="">Choose a Service</option>
+                    <option value="haircut">Haircut</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="facial">Facial</option>
+                    <option value="massage">Massage</option>
+                </select>
+
+                <label for="appointment-date">Appointment Date</label>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message" placeholder="Enter any special requests"></textarea>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+            <div id="confirmation-message"></div>
+        </section>
+
+        <!-- To-Do List Section -->
+        <section id="todo">
+            <h1>To-Do List</h1>
+            <input type="text" id="todo-input" placeholder="Add a task...">
+            <button id="add-task-btn">Add Task</button>
+            <ul id="todo-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Beauty Salon</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
